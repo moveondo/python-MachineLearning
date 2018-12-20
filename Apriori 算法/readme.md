@@ -16,7 +16,7 @@
 
 度量它们的方法有很多种，这里我们来简单的介绍下支持度和可信度。
 
-![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E8%B4%9D%E5%8F%B6%E6%96%AF/image/native.jpg)
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/Apriori%20%E7%AE%97%E6%B3%95/image/Apriori.jpg)
 
 
 支持度: 数据集中包含该项集的记录所占的比例。例如上图中，{豆奶} 的支持度为 4/5。{豆奶, 尿布} 的支持度为 3/5。
@@ -81,5 +81,5 @@ Apriori 算法是发现 频繁项集 的一种方法。 Apriori 算法的两个�
 
   
   
-![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E8%B4%9D%E5%8F%B6%E6%96%AF/image/native.jpg)
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/Apriori%20%E7%AE%97%E6%B3%95/image/apriori1.jpg)
 
