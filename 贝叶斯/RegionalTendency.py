@@ -19,6 +19,54 @@ def setOfWords2VecMN(vocabList,inputSet):
                 returnVec[vocabList.index(word)]+=1
     return returnVec
 
+def bagOfWords2VecMN(vocabList, inputSet):
+    returnVec = [0] * len(vocabList)
+    for word in inputSet:
+        if word in vocabList:
+            returnVec[vocabList.index(word)] += 1
+    return returnVec
+
+
+def trainNB0(trainMatrix, trainCategory):
+    """
+    训练数据优化版本
+    :param trainMatrix: 文件单词矩阵
+    :param trainCategory: 文件对应的类别
+    :return:
+    """
+    # 总文件数
+    numTrainDocs = len(trainMatrix)
+    # 总单词数
+    numWords = len(trainMatrix[0])
+    # 侮辱性文件的出现概率
+    pAbusive = sum(trainCategory) / float(numTrainDocs)
+    # 构造单词出现次数列表
+    # p0Num 正常的统计
+    # p1Num 侮辱的统计
+    # 避免单词列表中的任何一个单词为0，而导致最后的乘积为0，所以将每个单词的出现次数初始化为 1
+    p0Num = ones(numWords)#[0,0......]->[1,1,1,1,1.....]
+    p1Num = ones(numWords)
+
+    # 整个数据集单词出现总数，2.0根据样本/实际调查结果调整分母的值（2主要是避免分母为0，当然值可以调整）
+    # p0Denom 正常的统计
+    # p1Denom 侮辱的统计
+    p0Denom = 2.0
+    p1Denom = 2.0
+    for i in range(numTrainDocs):
+        if trainCategory[i] == 1:
+            # 累加辱骂词的频次
+            p1Num += trainMatrix[i]
+            # 对每篇文章的辱骂的频次 进行统计汇总
+            p1Denom += sum(trainMatrix[i])
+        else:
+            p0Num += trainMatrix[i]
+            p0Denom += sum(trainMatrix[i])
+    # 类别1，即侮辱性文档的[log(P(F1|C1)),log(P(F2|C1)),log(P(F3|C1)),log(P(F4|C1)),log(P(F5|C1))....]列表
+    p1Vect = log(p1Num / p1Denom)
+    # 类别0，即正常文档的[log(P(F1|C0)),log(P(F2|C0)),log(P(F3|C0)),log(P(F4|C0)),log(P(F5|C0))....]列表
+    p0Vect = log(p0Num / p0Denom)
+    return p0Vect, p1Vect, pAbusive
+
 
 #文件解析
 def textParse(bigString):
@@ -89,7 +137,7 @@ def getTopWords(ny,sf):
         print(item[0])
 
 
-if __name__ == "__main__":
-    # testingNB()
-    spamTest()
-    # laTest()
+# if __name__ == "__main__":
+#     # testingNB()
+#     spamTest()
+#     # laTest()

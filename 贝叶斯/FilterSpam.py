@@ -10,6 +10,25 @@ p(x|y)=p(y|x)p(x)/p(y)
 # ------------------------------------------------------------------------------------------
 # 项目案例2: 使用朴素贝叶斯过滤垃圾邮件
 
+
+def setOfWords2Vec(vocabList, inputSet):
+    """
+    遍历查看该单词是否出现，出现该单词则将该单词置1
+    :param vocabList: 所有单词集合列表
+    :param inputSet: 输入数据集
+    :return: 匹配列表[0,1,0,1...]，其中 1与0 表示词汇表中的单词是否出现在输入的数据集中
+    """
+    # 创建一个和词汇表等长的向量，并将其元素都设置为0
+    returnVec = [0] * len(vocabList)# [0,0......]
+    # 遍历文档中的所有单词，如果出现了词汇表中的单词，则将输出的文档向量中的对应值设为1
+    for word in inputSet:
+        if word in vocabList:
+            returnVec[vocabList.index(word)] = 1
+        else:
+            print("the word: %s is not in my Vocabulary!" % word)
+    return returnVec
+
+
 # 切分文本
 def textParse(bigString):
     '''
@@ -40,11 +59,11 @@ def spamTest():
     fullText = []
     for i in range(1, 26):
         # 切分，解析数据，并归类为 1 类别
-        wordList = textParse(open('db/4.NaiveBayes/email/spam/%d.txt' % i).read())
+        wordList = textParse(open('/email/spam/%d.txt' % i).read())
         docList.append(wordList)
         classList.append(1)
         # 切分，解析数据，并归类为 0 类别
-        wordList = textParse(open('db/4.NaiveBayes/email/ham/%d.txt' % i).read())
+        wordList = textParse(open('/email/ham/%d.txt' % i).read())
         docList.append(wordList)
         fullText.extend(wordList)
         classList.append(0)
@@ -75,7 +94,7 @@ def spamTest():
 
 
 def testParseTest():
-    print(textParse(open('db/4.NaiveBayes/email/ham/1.txt').read()))
+    print(textParse(open(' /email/ham/1.txt').read()))
 
 
 if __name__ == "__main__":
