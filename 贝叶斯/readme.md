@@ -77,9 +77,13 @@ Note: 朴素贝叶斯分类器通常有两种实现方式: 一种基于伯努利
 
 ```
 
-### 一道考试题
+### 两道考试题
 
 ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E8%B4%9D%E5%8F%B6%E6%96%AF/image/native.jpg)
+
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E8%B4%9D%E5%8F%B6%E6%96%AF/image/native2.jpg)
+
 
 
 
