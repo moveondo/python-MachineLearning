@@ -27,7 +27,7 @@
 
 是基于对象间距离来计算的，通常用:1名考斯基距离，2当 q=1 时,d 称为曼哈顿距离;3当 q=2 时,d 称为欧几里得距离
 
-![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/Apriori%20%E7%AE%97%E6%B3%95/image/apriori1.jpg)
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/k-mean.jpg)
 
 (最常用)曼哈顿函数表示两个点在标准坐标系上的绝对轴距总和，坐标(x1, y1)的 i 点与坐标(x2, y2)的 j 点的 曼哈顿距离为:d(i,j)=|X1-X2|+|Y1-Y2|。找曼哈顿距离最近的那个点就是新的中心点。
 
@@ -144,10 +144,10 @@ k-means算法因为手动选取k值和初始化随机质心的缘故，每一次
 两道试题：
 
 
-![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/Apriori%20%E7%AE%97%E6%B3%95/image/apriori1.jpg)
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean1.jpg)
 
 
-![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/Apriori%20%E7%AE%97%E6%B3%95/image/apriori1.jpg)
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
 
 
 K-Means 聚类算法的缺陷
