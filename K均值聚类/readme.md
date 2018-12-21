@@ -12,7 +12,7 @@
  * 2 聚类特征 CF 满足线性可加性 
  * 3 用 B-tree 的性质实现了 CF-tree 基于密度法(硬聚类):DBSCAN，OPTICS(基于密度也可以理解成基于相似度)
 
-(2)基于模型法[即概率法](软聚类):GMM 等
+(2)基于模型法即概率法(软聚类):GMM 等
 
 2、对象间的相似性是聚类分析的核心
  (1)对象的属性分类
@@ -46,6 +46,7 @@
 
 
 4、好的聚类算法特点 Requirements of Clustering in Data Mining
+
  * 可伸缩性
  * 能够处理各种不同类型的属性
  * 能够发现任意形状的聚类
@@ -141,7 +142,7 @@ k-means算法因为手动选取k值和初始化随机质心的缘故，每一次
 聚类的目标是在保持簇数目不变的情况下提高簇的质量。
 
 
-两道试题：
+### 两道试题：
 
 
 ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean1.jpg)
@@ -150,7 +151,7 @@ k-means算法因为手动选取k值和初始化随机质心的缘故，每一次
 ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
 
 
-K-Means 聚类算法的缺陷
+### K-Means 聚类算法的缺陷
 
 >在 kMeans 的函数测试中，可能偶尔会陷入局部最小值（局部最优的结果，但不是全局最优的结果）.
 
