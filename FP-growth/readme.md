@@ -35,7 +35,7 @@ class treeNode:
 
 基于数据构建FP树
 
- #####步骤1:
+ ##### 步骤1:
 
  * 遍历所有的数据集合，计算所有项的支持度。
  * 丢弃非频繁的项。
@@ -70,14 +70,14 @@ class treeNode:
 
  * 对头部链表节点从小到大遍历，得到条件模式基，同时获得一个频繁项集。 
  
- ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A47-1.png)
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A46-2.png)
 
  
  如上图，从头部链表 t 节点开始遍历，t 节点加入到频繁项集。找到以 t 节点为结尾的路径如下: 
  
  
  
- ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A47-2.png)
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A47-1.png)
 
 
  
@@ -88,7 +88,7 @@ class treeNode:
 
 * 条件模式基继续构造条件 FP树， 得到频繁项集，和之前的频繁项组合起来，这是一个递归遍历头部链表生成FP树的过程，递归截止条件是生成的FP树的头部链表为空。 根据步骤 2 得到的条件模式基 [z,x,y,s,t]:2，[z,x,y,r,t]:1 作为数据集继续构造出一棵FP树，计算支持度，去除非频繁项，集合按照支持度降序排序，重复上面构造FP树的步骤。最后得到下面 t-条件FP树 :
   
-  ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A47-2.png)
   
   然后根据 t-条件FP树 的头部链表进行遍历，从 y 开始。得到频繁项集 ty 。然后又得到 y 的条件模式基，构造出 ty的条件FP树，即 ty-条件FP树。继续遍历ty-条件FP树的头部链表，得到频繁项集 tyx，然后又得到频繁项集 tyxz. 然后得到构造tyxz-条件FP树的头部链表是空的，终止遍历。我们得到的频繁项集有 t->ty->tyz->tyzx，这只是一小部分。
 
