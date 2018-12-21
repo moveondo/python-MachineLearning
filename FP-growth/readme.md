@@ -41,24 +41,24 @@ class treeNode:
  * 丢弃非频繁的项。
  * 基于 支持度 降序排序所有的项。 
  
-![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A41-3.png)
 
  
  * 所有数据集合按照得到的顺序重新整理。
  *重新整理完成后，丢弃每个集合末尾非频繁的项。
 
-![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A44-5.png)
  
  ##### 步骤2: 
  
  * 6. 读取每个集合插入FP树中，同时用一个头部链表数据结构维护不同集合的相同项。
  
- ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A46-1.png)
 
  
  最终得到下面这样一棵FP树 
  
- ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A46-2.png)
 
 
 
@@ -70,14 +70,14 @@ class treeNode:
 
  * 对头部链表节点从小到大遍历，得到条件模式基，同时获得一个频繁项集。 
  
- ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A47-1.png)
 
  
  如上图，从头部链表 t 节点开始遍历，t 节点加入到频繁项集。找到以 t 节点为结尾的路径如下: 
  
  
  
- ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/kmean2.jpg)
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/FP-growth/image/%E6%AD%A5%E9%AA%A47-2.png)
 
 
  
