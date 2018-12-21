@@ -21,6 +21,7 @@ k-means是一种简单而有效的聚类方法。
 
 稳定性：前者稳定，后者不稳定。
 
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E7%AE%97%E6%B3%95%E9%97%B4%E5%8C%BA%E5%88%AB%E8%81%94%E7%B3%BB/image/knnkmean.jpg)
 
 
 ### Apriori VS FP-growth
