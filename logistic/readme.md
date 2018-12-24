@@ -38,18 +38,16 @@ X各维度叠加和Y的关系不只是这一种，还可能是其他的比如：
 
 
 前面已经说了，我们使用logistic回归是用于二分类问题（y只有两个值A,B，也可以写成1和0，这都没关系），回归模型得到的结果不是预测样本X对应的y值（注意下，在logistic回归这里我们小写y表示某个样本Xi的类别，而大写Y或Y(Xi)表示logistic回归模型对某个样本Xi预测为1的概率。其实这里最好把Y用其他字母表示，以免混淆，但是已经这里写了，以后注意。），而是y=1的概率或y=0的概率。
-我们假设y=1的概率公式是： <img width="150" height="150" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main1.jpg"/>
-
-，
-那么y=0的概率就是 <img width="150" height="150" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main2.jpg"/>
+我们假设y=1的概率公式是： <img width="150" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main1.jpg"/>，
+那么y=0的概率就是 <img width="150" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main2.jpg"/>
 。
 （注意我们也可以y=0的概率公式为前面那一个，这里是任意的。这里不同的结果只是最终的W参数不同罢了。因为我们最终的W是训练出来的，不管怎么样，模型都会表现出样本的特点来。只是我们习惯了把Y(X)当成y=1的logistic模型映射的概率）
 
 
-还要注意这里我们不是对一个Xi都要分别预测出来y=1的概率和y=0的概率。而是对于一个Xi，如果它的yi=1，那么我们就用![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main1.jpg)
-这个公式映射所对应的概率，如果对于一个Xi，如果它的yi=0，那么我们就用![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main2.jpg)这个公式映射所对应的概率。都是根据yi的值映射出来一个概率。
+还要注意这里我们不是对一个Xi都要分别预测出来y=1的概率和y=0的概率。而是对于一个Xi，如果它的yi=1，那么我们就用 <img width="150" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main1.jpg"/>，
+这个公式映射所对应的概率，如果对于一个Xi，如果它的yi=0，那么我们就用 <img width="150" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main2.jpg"/>，这个公式映射所对应的概率。都是根据yi的值映射出来一个概率。
 
-因为我们的Y是概率，我们不能利用最小误差等，我们这里用的是极大化所有样本的对数似然函数：![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main4.jpg)。
+因为我们的Y是概率，我们不能利用最小误差等，我们这里用的是极大化所有样本的对数似然函数： <img width="400" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/main4.jpg"/>，。
 
 
 yi表示的是Xi真实所属的类别（1或0）。L（W）就是cost function。这里的目标函数值和W有关系，也就是X各维度线性叠加的那些权重有关系。
