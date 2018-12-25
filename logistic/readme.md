@@ -7,7 +7,7 @@ Logistic 回归 或者叫逻辑回归 虽然名字有回归，但是它是用来
 
 Sigmoid 函数的输入记为 z ，由下面公式得到:
 
-<img width="150" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/4.jpg"/>
+<img src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/4.jpg"/>
 
 如果采用向量的写法，上述公式可以写成<img width="150" src="https://github.com/moveondo/python-MachineLearning/blob/master/logistic/image/5.jpg"/>
  ,它表示将这两个数值向量对应元素相乘然后全部加起来即得到 z 值。其中的向量 x 是分类器的输入数据，向量 w 也就是我们要找到的最佳参数（系数），从而使得分类器尽可能地精确。为了寻找该最佳参数，需要用到最优化理论的一些知识。我们这里使用的是——梯度上升法（Gradient Ascent）。
