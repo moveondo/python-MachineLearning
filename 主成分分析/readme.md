@@ -66,9 +66,23 @@ PCA 工作原理
 
  * 正交是为了数据有效性损失最小
  * 正交的一个原因是特征值的特征向量是正交的
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90/image/1.jpg)
+
+
+PCA算法流程
+
+ 算法输入：数据集Xmxn
  
- 1.jpg
- 
+* 按列计算数据集X的均值Xmean，然后令Xnew=X−Xmean； 
+* 求解矩阵Xnew的协方差矩阵，并将其记为Cov； 
+* 计算协方差矩阵COv的特征值和相应的特征向量； 
+* 将特征值按照从大到小的排序，选择其中最大的kk个，然后将其对应的kk个特征向量分别作为列向量组成特征向量矩阵Wnxk; 
+* 计算XnewWXnewW，即将数据集Xnew投影到选取的特征向量上，这样就得到了我们需要的已经降维的数据集XnewW。
+
+
+
+
 ### PCA 优缺点
 
 ```
