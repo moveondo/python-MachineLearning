@@ -4,7 +4,33 @@
 SVD(singular value decomposition)，翻译成中文就是奇异值分解。SVD的用处有很多，比如：LSA（隐性语义分析）、推荐系统、特征压缩（或称数据降维）。SVD可以理解为：将一个比较复杂的矩阵用更小更简单的3个子矩阵的相乘来表示，这3个小矩阵描述了大矩阵重要的特性。
 
 
-![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90/image/1.jpg)
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/1.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/2.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/3.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/4.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/5.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/6.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/7.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/8.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/9.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/10.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/11.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/12.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/13.png)
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/image/1.png)
 
 
 
