@@ -6,7 +6,7 @@
 
 手肘法的核心指标是SSE(sum of the squared errors，误差平方和)，
 
-1.img
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/1.jpg)
 
 其中，Ci是第i个簇，p是Ci中的样本点，mi是Ci的质心（Ci中所有样本的均值），SSE是所有样本的聚类误差，代表了聚类效果的好坏。
 
@@ -38,7 +38,8 @@ plt.show()
 
 画出的k与SSE的关系图如下:
 
-2.img
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/2.jpg)
+
 
 2. 轮廓系数法
 
@@ -46,11 +47,11 @@ plt.show()
 
 该方法的核心指标是轮廓系数（Silhouette Coefficient），某个样本点Xi的轮廓系数定义如下：
 
-3.img
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/4.jpg)
 
 其中，a是Xi与同簇的其他样本的平均距离，称为凝聚度，b是Xi与最近簇中所有样本的平均距离，称为分离度。而最近簇的定义是
 
-4.img
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/5.jpg)
 
 其中p是某个簇Ck中的样本。事实上，简单点讲，就是用Xi到某个簇所有样本平均距离作为衡量该点到该簇的距离后，选择离Xi最近的一个簇作为最近簇。
 
@@ -84,7 +85,8 @@ plt.show()
 
 得到聚类数k与轮廓系数的关系图：
 
-5.img
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/6.jpg)
+
 
 可以看到，轮廓系数最大的k值是2，这表示我们的最佳聚类数为2。但是，值得注意的是，从k和SSE的手肘图可以看出，
 当k取2时，SSE还非常大，所以这是一个不太合理的聚类数，我们退而求其次，考虑轮廓系数第二大的k值4，这时候SSE已经处于一个较低的水平，因此最佳聚类系数应该取4而不是2。
@@ -97,3 +99,5 @@ a一大，样本与同簇的其他样本的平均距离就大，簇的紧凑程�
 
 
 从以上两个例子可以看出，轮廓系数法确定出的最优k值不一定是最优的，有时候还需要根据SSE去辅助选取，这样一来相对手肘法就显得有点累赘。因此，如果没有特殊情况的话，我还是建议首先考虑用手肘法。
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/image/7.jpg)
