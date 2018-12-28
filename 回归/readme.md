@@ -76,7 +76,7 @@ HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio
 ```
 
 
-###1.4、线性回归 算法特点
+### 1.4、线性回归 算法特点
 
 ```
 优点：结果易于理解，计算上不复杂。
