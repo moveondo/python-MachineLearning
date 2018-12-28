@@ -83,13 +83,16 @@ Classification Machine，是分类器，这个没什么好说的。也可以理�
 
 不通俗的理解： 在 maximum margin （最大间隔）上的这些点就叫 “支持向量”，我想补充的是为啥这些点就叫 “支持向量” ，因为最后的 classification machine （分类器）的表达式里只含有这些 “支持向量” 的信息，而与其他数据点无关：
 
-1.jpg
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/image/1.jpg)
+
+
 
 在这个表达式中，只有支持向量的系数 alphai 不等于 0 。
 
 如果还是不怎么理解，不要紧，看下图:
 
-2.jpg
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/image/2.jpg)
+
 
 supportVector
 
@@ -99,7 +102,8 @@ Concept （相关概念）
 
 我们先看一张图
 
-3.jpg
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/image/3.jpg)
+
 
 linearly separable （线性可分）: 如上图中的两组数据，它们之间已经分的足够开了，因此很容易就可以在图中画出一条直线将两组数据点分开。在这种情况下，这组数据就被称为线性可分数据。
 
