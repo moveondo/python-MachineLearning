@@ -29,19 +29,24 @@ HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio
 
 平方误差可以写做（其实我们是使用这个函数作为 loss function）:
 
-1.img
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%9B%9E%E5%BD%92/image/1.jpg)
 
-用矩阵表示还可以写做 2.jpg 。如果对 w 求导，得到 3.jpg ，令其等于零，解出 w 如下（具体求导过程为: http://blog.csdn.net/nomadlx53/article/details/50849941 ）:
+
+用矩阵表示还可以写做 ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%9B%9E%E5%BD%92/image/2.jpg)
+ 。如果对 w 求导，得到 ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%9B%9E%E5%BD%92/image/3.jpg)
+，令其等于零，解出 w 如下（具体求导过程为: http://blog.csdn.net/nomadlx53/article/details/50849941 ）:
 
 回归系数的最佳估计计算公式
 
-4.jpg
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%9B%9E%E5%BD%92/image/4.jpg)
+
 
 1.1、线性回归 须知概念
 1.1.1、矩阵求逆
 因为我们在计算回归方程的回归系数时，用到的计算公式如下:
 
-4.jpg
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%9B%9E%E5%BD%92/image/4.jpg)
+
 
 需要对矩阵求逆，因此这个方程只在逆矩阵存在的时候适用，我们在程序代码中对此作出判断。 判断矩阵是否可逆的一个可选方案是:
 
