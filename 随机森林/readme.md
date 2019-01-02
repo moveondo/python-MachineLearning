@@ -50,7 +50,7 @@
 * 然后统计子决策树的投票结果，得到最终的分类 就是 随机森林的输出结果。
 * 如下图，假设随机森林中有3棵子决策树，2棵子树的分类结果是A类，1棵子树的分类结果是B类，那么随机森林的分类结果就是A类。
 
-1.jpg
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/image/1.jpg)
 
 
 > 待选特征的随机化
@@ -64,7 +64,8 @@
 
 右边是一个随机森林中的子树的特征选取过程
 
-2.jpg
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/image/2.jpg)
+
 
 随机森林 开发流程
 
@@ -95,7 +96,7 @@
 
 > AdaBoost 工作原理
 
-3.jpg
+ ![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/image/3.jpg)
 
 > AdaBoost 开发流程
 
