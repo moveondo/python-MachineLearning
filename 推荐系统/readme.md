@@ -41,13 +41,16 @@
 * 基于知识推荐	
 * 组合推荐	
 
-1。jpg
+
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/image/1.jpg)
+
 
 ### 基于知识推荐
 
 基于知识的推荐（Knowledge-based Recommendation）在某种程度是可以看成是一种推理（Inference）技术，它不是建立在用户需要和偏好基础上推荐的。基于知识的方法因它们所用的功能知识不同而有明显区别。效用知识（Functional Knowledge）是一种关于一个项目如何满足某一特定用户的知识，因此能解释需要和推荐的关系，所以用户资料可以是任何能支持推理的知识结构，它可以是用户已经规范化的查询，也可以是一个更详细的用户需要的表示。
 
-2.jpg
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/image/2.jpg)
+
 
 ### 协同过滤推荐
 
