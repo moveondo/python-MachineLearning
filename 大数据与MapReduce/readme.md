@@ -28,8 +28,7 @@ MapReduce: 分布式的计算框架，可以将单个计算作业分配给多台
 * 数据被重复存放在不同的机器上，以防止某个机器失效
 * mapper 和 reducer 传输的数据形式为 key/value对
 
-1.jpg
-
+![Image text](https://github.com/moveondo/python-MachineLearning/blob/master/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%B8%8EMapReduce/image/1.jpg)
 
 ### MapRedece 特点
 
