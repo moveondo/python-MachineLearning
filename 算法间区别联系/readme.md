@@ -178,4 +178,6 @@ H(x) = E[I(xi)] = E[ log(2,1/p(xi)) ] = -∑p(xi)log(2,p(xi)) (i=1,2,..n)
 15.告诉我至少3中定义K的方法。
 
 
+参考链接： http://www.aboutyun.com/thread-23847-1-1.html
+
 
